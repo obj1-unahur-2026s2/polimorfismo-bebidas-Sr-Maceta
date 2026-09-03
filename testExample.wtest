@@ -1,9 +1,44 @@
-import example.pepita
+import example.*
 
-describe "group of tests for pepita" {
-
-  test "pepita has initial energy" {
-    assert.equals(100, pepita.energy())
+describe "pruebas" {
+  test "whisky 0" {
+    tito.consumir(0, whisky)
+    assert.equals(7, tito.velocidad())
   }
-
+  test "whisky 1" {
+    tito.consumir(1, whisky)
+    assert.equals(6.3, tito.velocidad())
+  }
+  test "terere 0" {
+    tito.consumir(0, terere)
+    assert.equals(7, tito.velocidad())
+  }
+  test "terere 1" {
+    tito.consumir(1, terere)
+    assert.equals(7, tito.velocidad())
+  }
+  test "terere 2" {
+    tito.consumir(2, terere)
+    assert.equals(7, tito.velocidad())
+  }
+  test "terere 3" {
+    tito.consumir(3, terere)
+    assert.equals(7, tito.velocidad())
+  }
+  test "terere 4" {
+    tito.consumir(4, terere)
+    assert.equals(8.4, tito.velocidad())
+  }
+  test "terere 5" {
+    tito.consumir(5, terere)
+    assert.equals(10.5, tito.velocidad())
+  }
+  test "cianuro 1" {
+    tito.consumir(1, cianuro)
+    assert.equals(0, tito.velocidad())
+  }
+  test "cianuro 0" {
+    tito.consumir(0, cianuro)
+    assert.equals(0, tito.velocidad())
+  }
 }
