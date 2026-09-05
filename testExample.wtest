@@ -34,8 +34,9 @@ describe "pruebas" {
     assert.equals(10.5, tito.velocidad())
   }
   test "cianuro 1" {
+    tito.cambiarPeso(80)
     tito.consumir(1, cianuro)
-    assert.equals(0, tito.velocidad())
+    assert.equals(11.025, tito.velocidad())
   }
   test "cianuro 0" {
     tito.consumir(0, cianuro)
